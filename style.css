@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@300&family=Source+Sans+Pro:wght@200&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+html{
+    font-family: 'Lato', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
+    /* font-family: 'Source Sans Pro', sans-serif; */
+}
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: aliceblue;
+    
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px 100px;
+    height: 100vh;
+   gap: 20px;
+   padding: 20px;
+}
+.card{
+    box-shadow: 3px rgba(0, 0, 0, 0.5);
+    background-color: rgb(248, 250, 251);
+    
+}
+.card p, h4{
+    padding: 10px;
+}
+.c1{
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+    text-align: center;
+    padding: 25px 20px;
+    line-height: 20px;
+  
+}
+.c1 .title{
+    font-size: large;
+}
+.c1 .text{
+    font-size: smaller;
+    
+}
+.c2{
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border-top: 5px solid rgb(5, 118, 156);
+    padding: 15px;
+    margin-top: 100px;
+    height: 240px;
+  box-shadow: 0px 4px 5px 1px lightgray;
+}
+.c3{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    border-top: 5px solid rgb(229, 49, 22);
+    padding: 15px;
+    height: 240px;
+  box-shadow: 0px 4px 5px 1px lightgray;
+    
+}
+.c4{
+    grid-column-start: 3;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    border-top: 5px solid rgb(30, 151, 192);
+    padding: 15px;
+    margin-top: 100px;
+    height: 240px;
+  box-shadow: 0px 4px 5px 1px lightgray;
+}
+.c5{
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    border-top: 5px solid rgb(228, 228, 22);
+    padding: 15px;
+    height: 240px;
+  box-shadow: 0px 4px 5px 1px lightgray;
+}
+.card .image{
+    width: 100%;
+    height: 150px;
+    text-align: end;
+    padding-top: 50px;
+}
+
+.card img{
+    width: 50px;
+    height: 50px;
+    
+}
+@media screen and (max-width:600px) {
+    body{
+        margin: 0%;
+        padding: 0%;
+    }
+    .main{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .c1{
+        order: 1;
+        gap:10px;
+    }.c2{
+        order: 2;
+        margin-top: 0;
+    }.c3{
+        order: 3;
+    }.c4{
+        order: 5;
+        margin-top: 0%;
+    }
+    .c5{order: 4;}
+}
